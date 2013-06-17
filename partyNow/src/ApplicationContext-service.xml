@@ -17,12 +17,12 @@
 		<property name="defaultEncoding"><value>utf-8</value></property>
 		<property name="maxUploadSize"><value>100000</value></property>
 	</bean> -->
-	<context:component-scan base-package="com.bizconf.audio.service"
+	<context:component-scan base-package="com.bimaweng.party.service"
 	name-generator="com.libernate.support.spring.PackageAnnotationBeanNameGenerator"></context:component-scan>
 	
-	<context:component-scan base-package="com.bizconf.audio.logic"
+	<context:component-scan base-package="com.bimaweng.party.logic"
 	name-generator="com.libernate.support.spring.PackageAnnotationBeanNameGenerator"></context:component-scan>
 	
-	<context:component-scan base-package="com.bizconf.audio.component"
+	<context:component-scan base-package="com.bimaweng.party.component"
 	name-generator="com.libernate.support.spring.PackageAnnotationBeanNameGenerator"></context:component-scan>
 </beans>

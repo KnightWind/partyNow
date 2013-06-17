@@ -15,7 +15,7 @@
 		</filter>
 	</appender>
 	<appender name="DEBUG" class="org.apache.log4j.RollingFileAppender">
-		<param name="File" value="D:/audio/logs/debug.log" />
+		<param name="File" value="E:/github/logs/debug.log" />
 		<param name="Append" value="true" /> 
 		<param name="Encoding" value="UTF-8" />
 
@@ -31,7 +31,7 @@
 		</filter>
 	</appender>
 	<appender name="INFO" class="org.apache.log4j.RollingFileAppender">
-		<param name="File" value="D:/audio/logs/info.log" />
+		<param name="File" value="E:/github/logs/info.log" />
 		<param name="Append" value="true" />
 		<param name="MaxFileSize" value="102400KB" />
 		<param name="Encoding" value="UTF-8" />
@@ -46,7 +46,7 @@
 	</appender>
 	
 	<appender name="WARN" class="org.apache.log4j.RollingFileAppender">
-		<param name="File" value="D:/audio/logs/warn.log" />
+		<param name="File" value="E:/github/logs/warn.log" />
 		<param name="Append" value="true" />
 		<param name="MaxFileSize" value="102400KB" />
 		<param name="Encoding" value="UTF-8" />
@@ -60,7 +60,7 @@
 		</filter>
 	</appender>
 	<appender name="ERROR" class="org.apache.log4j.RollingFileAppender">
-		<param name="File" value="D:/audio/logs/error.log" />
+		<param name="File" value="E:/github/logs/error.log" />
 		<param name="Append" value="true" />
 		<param name="MaxFileSize" value="102400KB" />
 		<param name="Encoding" value="UTF-8" />
@@ -74,7 +74,7 @@
 		</filter>
 	</appender>
 	<appender name="INFOTOERROR" class="org.apache.log4j.RollingFileAppender">
-		<param name="File" value="D:/audio/logs/info_to_error.log" />
+		<param name="File" value="E:/github/logs/info_to_error.log" />
 		<param name="Append" value="true" />
 		<param name="MaxFileSize" value="102400KB" />
 		<param name="Encoding" value="UTF-8" />
@@ -89,7 +89,7 @@
 	</appender>
 	
 	<appender name="joinmtg" class="org.apache.log4j.RollingFileAppender">
-		<param name="File" value="D:/audio/logs/joinmtg.log" />
+		<param name="File" value="E:/github/logs/joinmtg.log" />
 		<param name="Append" value="true" />
 		<param name="MaxFileSize" value="102400KB" />
 		<param name="Encoding" value="UTF-8" />
@@ -104,7 +104,7 @@
 	</appender>
 	
 	<appender name="joinController" class="org.apache.log4j.RollingFileAppender">
-		<param name="File" value="D:/audio/logs/joinController.log" />
+		<param name="File" value="E:/github/logs/joinController.log" />
 		<param name="Append" value="true" />
 		<param name="MaxFileSize" value="102400KB" />
 		<param name="Encoding" value="UTF-8" />

@@ -13,7 +13,7 @@
 	default-autowire="byName" default-lazy-init="false">
 
 	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
-	<bean id="libernate.datasource.bimaweng.partynow libernate.datasource.bizconf.audio" class="org.apache.commons.dbcp.BasicDataSource">
+	<bean id="libernate.datasource.bimaweng.partynow" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://127.0.0.1:3306/bizconf?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8" />
 		<property name="username" value="bimaweng" />
