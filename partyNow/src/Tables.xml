@@ -19,9 +19,9 @@
 	</default>
 	 
 	<table>
-		<entity>com.bimaweng.party.entity.user</entity>
+		<entity>com.bimaweng.party.entity.User</entity>
 		<name>t_user</name>
-		<primary-key>id</primary-key>
+		<primary-key>userId</primary-key>
 		<order-by></order-by>
 	</table>
 </tables>
