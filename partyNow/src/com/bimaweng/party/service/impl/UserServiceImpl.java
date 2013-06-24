@@ -14,11 +14,9 @@ import com.bimaweng.party.service.UserService;
 public class UserServiceImpl extends BaseService implements UserService {
 
 	@Override
-	public User regsitUser(User user) {
-		// TODO Auto-generated method stub
-		return null;
+	public User regsitUser(User user) throws Exception {
+		return libernate.saveEntity(user);
 	}
-	
 		
 	
 	

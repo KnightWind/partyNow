@@ -14,5 +14,5 @@ public interface UserService  {
 	 * @param user
 	 * @return
 	 */
-	public User regsitUser(User user);
+	public User regsitUser(User user) throws Exception;
 }
