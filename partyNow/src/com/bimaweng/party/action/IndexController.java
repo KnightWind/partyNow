@@ -55,7 +55,8 @@ public class IndexController extends BaseController{
 			}
 			
 			if(libUser!=null){
-				json.put("userinfo", libUser);
+				json.put("userinfo", libUser); 
+				
 			}else{
 				stateCode = Constant.COMMON_EXCEPTION;
 			}
