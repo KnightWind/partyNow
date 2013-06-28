@@ -6,7 +6,7 @@ import com.libernate.liberc.ActionForward;
 import com.libernate.liberc.annotation.AsController;
 import com.libernate.liberc.annotation.ReqPath;
 @ReqPath("test")
-public class SiteMonitorController extends BaseController{
+public class TestController extends BaseController{
 	
 	@AsController(path = "list")
 	public Object list(HttpServletRequest request) throws Exception{

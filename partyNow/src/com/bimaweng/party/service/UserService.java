@@ -15,4 +15,22 @@ public interface UserService  {
 	 * @return
 	 */
 	public User regsitUser(User user) throws Exception;
+	
+	
+	/**
+	 * 用户登录
+	 * @param user
+	 * @return
+	 * @throws Exception
+	 */
+	public User userAuthentication(String username,String password) throws Exception;
+	
+	
+	/**
+	 * 
+	 * @param openId
+	 * @return
+	 * @throws Exception
+	 */
+	public User userAuthenticationByOpenId(String openId) throws Exception;
 }

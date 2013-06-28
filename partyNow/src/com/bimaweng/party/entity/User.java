@@ -11,6 +11,8 @@ public class User {
 	
 	private int userId;
 	
+	private String username;
+	
 	private String alias;
 	
 	private String password;
@@ -18,6 +20,7 @@ public class User {
 	private String phoneNumber;
 	
 	private String email;
+	
 	private int gender;
 	
 	private Date birthDay;
@@ -32,10 +35,28 @@ public class User {
 	
 	private int erasePeople;
 	
-	
 	private String idCard;
 	
 	private int registerType;
+	
+	private String realName;
+	
+	
+	public String getRealName() {
+		return realName;
+	}
+
+	public void setRealName(String realName) {
+		this.realName = realName;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
 	public int getUserId() {
 		return userId;
