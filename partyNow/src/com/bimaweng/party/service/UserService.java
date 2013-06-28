@@ -32,5 +32,5 @@ public interface UserService  {
 	 * @return
 	 * @throws Exception
 	 */
-	public User userAuthenticationByOpenId(String openId) throws Exception;
+	public User userAuthenticationByOpenId(String openId,int regType) throws Exception;
 }

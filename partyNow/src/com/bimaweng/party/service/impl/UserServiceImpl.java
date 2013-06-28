@@ -25,11 +25,11 @@ public class UserServiceImpl extends BaseService implements UserService {
 		return libernate.getEntityCustomized(User.class,sql, new Object[]{username,password});
 	}
 
-
+	
 	@Override
-	public User userAuthenticationByOpenId(String openId) throws Exception {
-		String sql = "select * from t_user where user_name=? ";
-		return libernate.getEntityCustomized(User.class,sql, new Object[]{openId});
+	public User userAuthenticationByOpenId(String openId,int regType) throws Exception {
+		String sql = "select * from t_user where user_name=? and register_type = ?";
+		return libernate.getEntityCustomized(User.class,sql, new Object[]{openId,regType});
 	}
 		
 	

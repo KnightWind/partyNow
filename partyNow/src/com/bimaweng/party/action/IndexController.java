@@ -28,6 +28,8 @@ public class IndexController extends BaseController{
 			User libUser = userService.regsitUser(user);
 			if(libUser!=null){
 				json.put("userinfo", libUser);
+			}else{
+				stateCode = Constant.COMMON_EXCEPTION;
 			}
 		}catch(Exception e){
 			
@@ -45,9 +47,17 @@ public class IndexController extends BaseController{
 		JSONObject json = new JSONObject();
 		try{
 			//TODO 校验数据
-			User libUser = userService.userAuthentication(username,password);
+			User libUser = null;
+			if(registerType==Constant.REG_TYPE_GENERAL){
+				libUser = userService.userAuthentication(username,password);
+			}else{
+				libUser = userService.userAuthenticationByOpenId(username, registerType);
+			}
+			
 			if(libUser!=null){
 				json.put("userinfo", libUser);
+			}else{
+				stateCode = Constant.COMMON_EXCEPTION;
 			}
 		}catch(Exception e){
 			

@@ -14,11 +14,11 @@ public class Constant {
 	public static final String COMMON_EXCEPTION = "99";
 	
 	//普通注册
-	public static final String REG_TYPE_GENERAL = "1";
+	public static final int REG_TYPE_GENERAL = 0;
 	
 	//微博注册
-	public static final String REG_TYPE_WEIBO = "2";
+	public static final int REG_TYPE_WEIBO = 1;
 	
 	//微信
-	public static final String REG_TYPE_WEIXI = "4";
+	public static final int REG_TYPE_WEIXI = 2;
 }
