@@ -13,7 +13,7 @@ import com.libernate.liberc.ActionForward;
 import com.libernate.liberc.annotation.AsController;
 import com.libernate.liberc.annotation.CParam;
 import com.libernate.liberc.annotation.ReqPath;
-@ReqPath("regsiter")
+@ReqPath("index")
 public class IndexController extends BaseController{
 	
 	@Autowired
