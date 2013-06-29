@@ -11,23 +11,23 @@ public class User {
 	
 	private int userId;
 	
-	private String username;
+	private String userName;
 	
-	private String alias;
+	private String alias="";
 	
-	private String password;
+	private String password="";
 	
-	private String phoneNumber;
+	private String phoneNumber="";
 	
-	private String email;
+	private String email="";
 	
 	private int gender;
 	
 	private Date birthDay;
 	
-	private String avatarUrl;
+	private String avatarUrl="";
 	
-	private String regsiterTime;
+	private Date regsiterTime = new Date();
 	
 	private int isErased;
 	
@@ -37,9 +37,9 @@ public class User {
 	
 	private String idCard;
 	
-	private int registerType;
+	private int registerType = 0;
 	
-	private String realName;
+	private String realName = "";
 	
 	
 	public String getRealName() {
@@ -50,12 +50,12 @@ public class User {
 		this.realName = realName;
 	}
 
-	public String getUsername() {
-		return username;
+	public String getUserName() {
+		return userName;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 	public int getUserId() {
@@ -122,11 +122,11 @@ public class User {
 		this.avatarUrl = avatarUrl;
 	}
 
-	public String getRegsiterTime() {
+	public Date getRegsiterTime() {
 		return regsiterTime;
 	}
 
-	public void setRegsiterTime(String regsiterTime) {
+	public void setRegsiterTime(Date regsiterTime) {
 		this.regsiterTime = regsiterTime;
 	}
 

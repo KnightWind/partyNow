@@ -33,4 +33,30 @@ public interface UserService  {
 	 * @throws Exception
 	 */
 	public User userAuthenticationByOpenId(String openId,int regType) throws Exception;
+	
+	
+	/**
+	 * 通过邮箱获取用户
+	 * @param email
+	 * @return
+	 * @throws Exception
+	 */
+	public User getUserbyEmail(String email) throws Exception;
+	
+	/**
+	 * 
+	 * @param username
+	 * @return
+	 * @throws Exception
+	 */
+	public User getUserbyUserName(String username) throws Exception;
+	
+	
+	/**
+	 * 
+	 * @param user
+	 * @return
+	 * @throws Exception
+	 */
+	public String verifyUserReg(User user) throws Exception;
 }

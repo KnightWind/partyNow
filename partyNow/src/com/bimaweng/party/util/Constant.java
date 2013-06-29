@@ -9,6 +9,15 @@ public class Constant {
 	//成功标志
 	public static final String COMMON_SUCCESS = "0";
 	
+	//账号不合法
+	public static final String ACCOUT_ERROR = "1";
+	
+	//邮箱不合法
+	public static final String EMAIL_ERROR = "2";
+	
+	//密码不合法
+	public static final String PASS_ERROR = "3";
+	
 	
 	//全局异常
 	public static final String COMMON_EXCEPTION = "99";

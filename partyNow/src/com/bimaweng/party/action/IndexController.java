@@ -24,15 +24,18 @@ public class IndexController extends BaseController{
 		String stateCode = Constant.COMMON_SUCCESS;
 		JSONObject json = new JSONObject();
 		try{
-			//TODO 校验数据
-			User libUser = userService.regsitUser(user);
-			if(libUser!=null){
-				json.put("userinfo", libUser);
+			String verfifyCode = userService.verifyUserReg(user);
+			if(!Constant.COMMON_SUCCESS.equals(verfifyCode)){
+				stateCode = verfifyCode;
 			}else{
-				stateCode = Constant.COMMON_EXCEPTION;
+				User libUser = userService.regsitUser(user);
+				if(libUser!=null){
+					json.put("userinfo", libUser);
+				}else{
+					stateCode = Constant.COMMON_EXCEPTION;
+				}
 			}
 		}catch(Exception e){
-			
 			stateCode = Constant.COMMON_EXCEPTION;
 		}finally{
 			json.put("state", stateCode);
@@ -46,7 +49,6 @@ public class IndexController extends BaseController{
 		String stateCode = Constant.COMMON_SUCCESS;
 		JSONObject json = new JSONObject();
 		try{
-			//TODO 校验数据
 			User libUser = null;
 			if(registerType==Constant.REG_TYPE_GENERAL){
 				libUser = userService.userAuthentication(username,password);
