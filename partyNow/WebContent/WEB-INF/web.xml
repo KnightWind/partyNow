@@ -34,14 +34,12 @@
         <dispatcher>INCLUDE</dispatcher>
 	</filter-mapping>
 	
-	 <jsp-config> 
-	
+	<!--<jsp-config> 
 	    <taglib>
 	        <taglib-uri>/const-tag</taglib-uri>
 	        <taglib-location>/WEB-INF/jstltags/const-tag.tld</taglib-location>
 	    </taglib> 
-	
-	</jsp-config>
+	</jsp-config>-->
 	<!-- <error-page> 
 		<error-code>404</error-code> 
 		<location>/index.jsp</location> 
